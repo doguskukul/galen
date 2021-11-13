@@ -36,24 +36,24 @@
 </div>
 
 <!-- Nav Bar -->
-<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+<header style="padding: 0px !important;" class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
   <div class="container">
     <div class="row align-items-center position-relative">
 
 
       <div class="site-logo">
-        <a href="index.html" class="text-black"><span class="text-primary">Brand</span></a>
+        <a href="index.html" class="text-black"><span class="text-primary"><img class="logo" src="assets/images/logo.png"></span></a>
       </div>
 
       <div class="col-12">
         <nav class="site-navigation text-right ml-auto " role="navigation">
 
           <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block" routerLinkActive="active">
-            <li><a routerLink="home" class="nav-link">Home</a></li>
-            <li><a routerLink="products" class="nav-link">Products</a></li>
+            <li><a routerLink="home" class="nav-link menu-link">Home</a></li>
+            <li><a routerLink="products" class="nav-link menu-link">Products</a></li>
             <li class="has-children">
-              <a routerLink="about-us" class="nav-link">About Us</a>
+              <a routerLink="about-us" class="nav-link menu-link">About Us</a>
               <ul class="dropdown arrow-top">
                 <li><a class="nav-link">Team</a></li>
                 <li><a class="nav-link">Pricing</a></li>
@@ -68,7 +68,7 @@
                 </li>
               </ul>
             </li>
-            <li><a routerLink="contact-us" class="nav-link">Contact</a></li>
+            <li><a routerLink="contact-us" class="nav-link menu-link">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -83,5 +83,4 @@
 
 </header>
 
-<!-- Body -->
-<div class="hero" style="background-image: url('./assets/images/hero_1.jpg');"></div>
+<router-outlet></router-outlet>
