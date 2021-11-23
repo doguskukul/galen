@@ -1,6 +1,5 @@
 body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #fff;
+  font-family: 'Shippori Antique B1', sans-serif;  background-color: #fff;
   height: 200vh;
   position: relative; }
   body:before {
@@ -28,8 +27,7 @@ p {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-
+  font-family: 'Shippori Antique B1', sans-serif; }
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -88,7 +86,7 @@ a {
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
-        padding: 35px 55px 35px 55px;
+        padding: 25px 45px 25px 45px;
         color: #7B0306 !important;
         display: inline-block;
         text-decoration: none !important;
@@ -103,12 +101,12 @@ a {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
         position: relative;
-        padding-right: 60px; }
+        padding-right: 50px; }
         .site-navbar .site-navigation .site-menu .has-children > a:before {
           position: absolute;
           content: "\e313";
           font-size: 16px;
-          padding-right: 40px;
+          padding-right: 30px;
           top: 50%;
           right: 0;
           -webkit-transform: translateY(-50%);
@@ -366,7 +364,7 @@ a {
 
 .logo {
   height: 100%;
-  width: 175px;
+  width: 225px;
 }
 
 .menu-link {
