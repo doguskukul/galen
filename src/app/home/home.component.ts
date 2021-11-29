@@ -8,10 +8,18 @@ import Splide from '@splidejs/splide';
 })
 export class HomeComponent implements OnInit {
 
+  selectedItem = 0;
   constructor() { }
 
   ngOnInit(): void {
     new Splide( '.splide' ).mount();
+  }
+
+  changeItem() {
+    this.selectedItem ++;
+    if (this.selectedItem == 3) {
+      this.selectedItem = 0;
+    }
   }
 
 }

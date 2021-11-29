@@ -1,4 +1,92 @@
+.splide-body {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 0;
+}
+
 .splide-element {
+  background: url("../../assets/images/lab-1-new.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
   height: 88vh;
+}
+
+.splide-title {
+  z-index: 10;
+  position: relative;
+  margin-top: 28%;
+  padding: 30px 30px 30px 25%;
+  height: auto;
+  font-family: 'Shippori Antique B1', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  -webkit-border-top-right-radius: 30px;
+  background: rgba(123,3,6,0.85) !important;
+}
+
+.splide-description {
+  font-size: 18px;
+  font-style: italic;
+  padding-top: 30px;
+}
+
+.section {
+  position: relative;
+  top: 88vh !important;
+  padding: 0 12.5% 0 12.5%;
+  font-family: 'Shippori Antique B1', sans-serif;
+  color: #212529;
+}
+
+.section-name {
+  font-size: 48px;
+}
+
+.section-title {
+  padding-top: 48px;
+  font-size: 30px;
+}
+
+.section-description {
+  font-size: 18px;
+  padding-top: 30px;
+  font-family: "Calibri";
+}
+
+.section-bar {
+  padding-top: 5px;
+  width: 48px;
+  background: rgba(123,3,6,0.85) !important;
+}
+
+.section-image {
+  width: 100%;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.section-image:hover {
+  -webkit-transform: scale(1.05);
+}
+
+.section-learn-more {
+  margin-top: 30px;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  background: rgba(123,3,6,0.85) !important;
+  font-family: 'Shippori Antique B1', sans-serif;
+  color: #fff !important;
+  -webkit-border-top-right-radius: 18px;
+  -webkit-border-bottom-left-radius: 18px;
+}
+
+.section-learn-more:hover {
+  filter:saturate(150%);
+}
+
+a {
+  color: #fff !important;
 }

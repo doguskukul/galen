@@ -1,9 +1,82 @@
-<div class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide"><img class="splide-element" src="assets/images/lab-1-new.jpg"></li>
-      <li class="splide__slide">Slide 02</li>
-      <li class="splide__slide">Slide 03</li>
-    </ul>
+<div class="splide-body">
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="splide-element">
+            <div class="row">
+              <div class="col-6">
+                <div class="splide-title">
+                  LEADING CHINA'S POCT INDUSTRY
+                  <div class="splide-description">
+                    Providing customers with professional rapid diagnosis
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">Slide 02</li>
+        <li class="splide__slide">Slide 03</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid section" routerLinkActive="active">
+  <div *ngIf="selectedItem==0" class="row">
+    <div class="col-lg-6">
+      <div class="section-name">Our Products</div>
+      <div class="section-bar"></div>
+      <div class="section-title">Colloidal Gold Platform</div>
+      <div class="section-description">
+        - The most developed technology platform.<br>
+        - Easy to use, require no equipment to process the sample or read the result.<br>
+        - Wide range of applications, including detecting acute infectious disease, drug of abuse, etc.<br>
+        - Galen 2019-nCoV Antibody Test kit is the first one of its kind that got approval to market in China.
+      </div>
+      <div class="section-learn-more"><a routerLink="../products">Learn More &nbsp; +</a></div>
+    </div>
+    <div class="col-lg-6 mt-4">
+      <img class="section-image" src="../../assets/images/20201029124853516.jpg">
+    </div>
+  </div>
+  <div *ngIf="selectedItem==1" class="row">
+    <div class="col-lg-6">
+      <div class="section-name">Our Products</div>
+      <div class="section-bar"></div>
+      <div class="section-title">Colloidal Gold Platform 2</div>
+      <div class="section-description">
+        - The most developed technology platform.<br>
+        - Easy to use, require no equipment to process the sample or read the result.<br>
+        - Wide range of applications, including detecting acute infectious disease, drug of abuse, etc.<br>
+        - Galen 2019-nCoV Antibody Test kit is the first one of its kind that got approval to market in China.
+      </div>
+      <div class="section-learn-more"><a routerLink="../products">Learn More &nbsp; +</a></div>
+    </div>
+    <div class="col-lg-6 mt-4">
+      <img class="section-image" src="../../assets/images/20201029124853516.jpg">
+    </div>
+  </div>
+  <div *ngIf="selectedItem==2" class="row">
+    <div class="col-lg-6">
+      <div class="section-name">Our Products</div>
+      <div class="section-bar"></div>
+      <div class="section-title">Colloidal Gold Platform 3</div>
+      <div class="section-description">
+        - The most developed technology platform.<br>
+        - Easy to use, require no equipment to process the sample or read the result.<br>
+        - Wide range of applications, including detecting acute infectious disease, drug of abuse, etc.<br>
+        - Galen 2019-nCoV Antibody Test kit is the first one of its kind that got approval to market in China.
+      </div>
+      <div class="section-learn-more"><a routerLink="../products">Learn More &nbsp; +</a></div>
+    </div>
+    <div class="col-lg-6 mt-4">
+      <img class="section-image" src="../../assets/images/20201029124853516.jpg">
+    </div>
+  </div>
+  <div class="row align-content-center">
+    <div class="col mr-auto change-item" (click)="changeItem()">click</div>
+    <div class="col mr-auto change-item" (click)="changeItem()">click</div>
   </div>
 </div>
