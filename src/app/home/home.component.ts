@@ -15,11 +15,4 @@ export class HomeComponent implements OnInit {
     new Splide( '.splide' ).mount();
   }
 
-  changeItem() {
-    this.selectedItem ++;
-    if (this.selectedItem == 3) {
-      this.selectedItem = 0;
-    }
-  }
-
 }

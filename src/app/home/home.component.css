@@ -6,7 +6,7 @@
 }
 
 .splide-element {
-  background: url("../../assets/images/lab-1-new.jpg") no-repeat center center fixed;
+  background: url("src/assets/images/slider-1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -89,4 +89,52 @@
 
 a {
   color: #fff !important;
+}
+
+.change-item {
+  margin: 30px 2px;
+  padding: 5px;
+  width: fit-content;
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529 !important;
+  border: 2px solid rgba(123,3,6,0.85) !important;
+}
+
+.change-item:hover {
+  background: rgba(123,3,6,0.85) !important;
+  cursor: pointer;
+}
+
+.change-item-left {
+  -webkit-border-bottom-left-radius: 12px;
+  -webkit-border-top-left-radius: 12px;
+}
+
+.change-item-right {
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+}
+
+.dark-background {
+  position: relative;
+  top: 88vh;
+  background: rgba(59, 1, 23, 0.3);
+  height: 700px;
+}
+
+.section-middle-bar {
+  padding-top: 2px;
+  width: 100%;
+  background: rgba(123,3,6,0.85) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  filter: grayscale(0.7);
+}
+
+.cursor-pointer:hover {
+  filter: grayscale(0);
 }
