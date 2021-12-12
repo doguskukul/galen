@@ -1,0 +1,54 @@
+<div class="container-fluid section">
+  <div class="row">
+    <div class="col-lg-6 section-column">
+      <div class="section-name">Coagulation Platform</div>
+      <div class="section-bar"></div>
+      <div class="section-description">
+        The platform includes Semi-Automatic Blood Coagulation Analyzer and Optical Blood Coagulation. Our optical blood
+        coagulation analyzer can test PT, APTT, TT, FIB, and ACT simultaneously, the first of its kind in the world.
+      </div>
+    </div>
+    <div class="col-lg-6 mt-4">
+      <img class="section-image" src="assets/images/product-main-0.jpg">
+    </div>
+  </div>
+  <div class="row justify-content-lg-center mt-5">
+    <div class="section-middle-bar"></div>
+  </div>
+</div>
+
+<div class="container-fluid dark-background section pt-lg-2 pb-lg-5">
+  <div class="section-related">
+    <div class="section-name mt-5">Related Products</div>
+    <div class="section-bar"></div>
+  </div>
+  <div class="row mt-5 section-column">
+    <div class="card product-card" style="width: 18rem;" (click)="selectedProduct=0" >
+      <img
+        src="assets/images/coagulation-platform/optical-coagulation-analyzer.jpg"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Optical Coagulation Analyzer
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid section pt-lg-2 pb-lg-5">
+  <div *ngIf="selectedProduct==0" class="row pt-lg-2">
+    <div class="col-lg-6">
+      <img class="section-image" src="assets/images/coagulation-platform/optical-coagulation-analyzer.jpg">
+    </div>
+    <div class="col-lg-6 section-column">
+      <div class="section-title">Optical Coagulation Analyzer</div>
+      <div class="section-description">
+        Wondfo Optical Coagulation Analyzer, used together with the test reagents, delivers quick lab-quality results that
+        support clinical decisions in cardiology, surgery and intensive care. <br><br>The first POCT coagulation analyzer
+        that can test PT/INR, APTT, TT, FIB and ACT.
+      </div>
+    </div>
+  </div>
+</div>
