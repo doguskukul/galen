@@ -1,7 +1,7 @@
 <div class="container-fluid section" routerLinkActive="active">
   <div class="row">
     <div class="col-lg-6 section-column">
-      <div class="section-title">Dry Biochemical Platform</div>
+      <div class="section-name">Dry Biochemical Platform</div>
       <div class="section-bar"></div>
       <div class="section-description">
         Wondfo Dry Chemistry Analyzer can test 16 items and provide the result within 2 minutes, ideal for the detection
@@ -13,10 +13,384 @@
       </div>
     </div>
     <div class="col-lg-6 mt-4">
-      <img class="section-image" src="assets/images/product-main-0.jpg">
+      <img class="section-image" src="assets/images/product-main-4.jpg">
     </div>
   </div>
   <div class="row justify-content-lg-center mt-5">
     <div class="section-middle-bar"></div>
+  </div>
+</div>
+
+<div class="container-fluid dark-background section pt-lg-2 pb-lg-5">
+  <div class="section-related">
+    <div class="section-name mt-5">Related Products</div>
+    <div class="section-bar"></div>
+  </div>
+  <div class="row mt-5 section-column">
+    <div class="card product-card" style="width: 18rem;" (click)="selectedProduct=0">
+      <img
+        src="assets/images/dry-biochemical-platform/dry-chemistry-analyzer.jpg"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Dry Chemistry Analyzer
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid section pt-lg-2 pb-lg-5">
+  <div *ngIf="selectedProduct==0" class="row pt-lg-2">
+    <div class="col-lg-6">
+      <img class="section-image" src="assets/images/dry-biochemical-platform/dry-chemistry-analyzer.jpg">
+    </div>
+    <div class="col-lg-6 section-column">
+      <div class="section-title">Dry Biochemical Analyzer</div>
+      <div class="section-description">
+        It is used with the Wondfo’s original Dry Chemistry Analyzer test strip which can help diagnose conditions such
+        as liver function, kidney function, myocardial enzyme, emergency treatment, blood routine examination, blood
+        glucose, etc. <br><br>
+        The Dry Chemistry Analyzer should only be used by healthcare professionals and for in vitro diagnostic use.
+      </div>
+    </div>
+  </div>
+  <div class="section-name">Test Menu</div>
+  <div class="section-bar"></div>
+  <div>
+    <div class="section-title">Liver Function</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width: 87px; text-align: center;">
+          <col style="width: 132px; text-align: center;">
+          <col style="width: 124px; text-align: center;">
+          <col style="width: 144px; text-align: center;">
+          <col style="width: 151px; text-align: center;">
+          <col style="width: 131px; text-align: center;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; width: 87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width: 132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width: 124px; text-align: center;"><strong>Sample Volume</strong></td>
+          <td style="width: 144px; text-align: center;"><strong>Reaction Time</strong></td>
+          <td style="width: 151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width: 131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>ALT</strong></td>
+          <td style="width: 132px; text-align: center;">Serum/Plasma</td>
+          <td style="text-align: center;">15μL</td>
+          <td style="text-align: center;">2.5min</td>
+          <td style="text-align: center;">5-800 U/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>AST</strong></td>
+          <td rowspan="3" style="text-align: center;">Serum</td>
+          <td style="text-align: center;">20μL</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">10-800 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>ALB</strong></td>
+          <td style="text-align: center;">7μL</td>
+          <td style="text-align: center;">1min</td>
+          <td style="text-align: center;">10-60 g/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>CHE</strong></td>
+          <td style="text-align: center;">10μL</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">200-12500 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+    <div class="section-title">Kidney Function</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width: 87px; text-align: center;">
+          <col style="width: 132px; text-align: center;">
+          <col style="width: 124px; text-align: center;">
+          <col style="width: 144px; text-align: center;">
+          <col style="width: 151px; text-align: center;">
+          <col style="width: 131px; text-align: center;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; width: 87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width: 132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width: 124px; text-align: center;"><strong>Sample Volume</strong></td>
+          <td style="width: 144px; text-align: center;"><strong>Reaction Time&nbsp;</strong></td>
+          <td style="width: 151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width: 131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>UREA</strong></td>
+          <td style="width: 132px; text-align: center;">Serum/Plasma</td>
+          <td rowspan="3" style="text-align: center;">15μL</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">2.5-40 mmol/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>CREA</strong></td>
+          <td style="text-align: center;">Serum</td>
+          <td style="text-align: center;">5min</td>
+          <td style="text-align: center;">30-1000 μmol/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>UA</strong></td>
+          <td style="width: 132px; text-align: center;">Serum/Plasma</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">120-1200 μmol/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+    <div class="section-title">Myocardial Enzyme</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width: 87px; text-align: center;">
+          <col style="width: 132px; text-align: center;">
+          <col style="width: 124px; text-align: center;">
+          <col style="width: 144px; text-align: center;">
+          <col style="width: 151px; text-align: center;">
+          <col style="width: 131px; text-align: center;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; width: 87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width: 132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width: 124px; text-align: center;"><strong>Sample Volume&nbsp;</strong></td>
+          <td style="width: 144px; text-align: center;"><strong>Reaction Time&nbsp;</strong></td>
+          <td style="width: 151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width: 131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>CK</strong></td>
+          <td rowspan="4" style="width: 132px; text-align: center;">Serum</td>
+          <td rowspan="3" style="text-align: center;">20μL</td>
+          <td style="text-align: center;">3min</td>
+          <td style="text-align: center;">20-1600 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>CK-MB</strong></td>
+          <td style="text-align: center;">4min</td>
+          <td style="text-align: center;">5-300 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>LDH</strong></td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">100-1800 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>a-HBDH</strong></td>
+          <td style="text-align: center;">15μL</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">20-1000 U/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+    <div class="section-title">Emergency Treatment</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width: 87px; text-align: center;">
+          <col style="width: 132px; text-align: center;">
+          <col style="width: 124px; text-align: center;">
+          <col style="width: 144px; text-align: center;">
+          <col style="width: 151px; text-align: center;">
+          <col style="width: 131px; text-align: center;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; width: 87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width: 132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width: 124px; text-align: center;"><strong>Sample Volume&nbsp;</strong></td>
+          <td style="width: 144px; text-align: center;"><strong>Reaction Time</strong></td>
+          <td style="width: 151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width: 131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>α-AMY</strong></td>
+          <td style="text-align: center;">Serum/Plasma</td>
+          <td rowspan="3" style="text-align: center;">10μL</td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">20-1000 U/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>LPS</strong></td>
+          <td rowspan="2" style="text-align: center;">Serum</td>
+          <td style="text-align: center;">3min</td>
+          <td style="text-align: center;">5-300 U/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>ALC</strong></td>
+          <td style="text-align: center;">2min</td>
+          <td style="text-align: center;">10.0-300.0 mg/dL</td>
+          <td style="text-align: center;">&nbsp;</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+    <div class="section-title">Blood Routine Examination</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width: 87px; text-align: center;">
+          <col style="width: 132px; text-align: center;">
+          <col style="width: 124px; text-align: center;">
+          <col style="width: 144px; text-align: center;">
+          <col style="width: 151px; text-align: center;">
+          <col style="width: 131px; text-align: center;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; width: 87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width: 132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width: 124px; text-align: center;"><strong>Sample Volume&nbsp;</strong></td>
+          <td style="width: 144px; text-align: center;"><strong>Reaction Time</strong></td>
+          <td style="width: 151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width: 131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height: 19px; text-align: center;"><strong>HB</strong></td>
+          <td style="text-align: center;">Whole Blood</td>
+          <td style="text-align: center;">10μL</td>
+          <td style="text-align: center;">1min</td>
+          <td style="text-align: center;">45-200 g/L</td>
+          <td style="text-align: center;">CE, NMPA</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+    <div class="section-title">Blood Glucose</div>
+    <div class="table-box">
+      <table class="table table-bordered">
+        <colgroup>
+          <col style="width:87px;">
+          <col style="width:132px;">
+          <col style="width:124px;">
+          <col style="width:144px;">
+          <col style="width:151px;">
+          <col style="width:131px;">
+        </colgroup>
+        <tbody>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height:19px;width:87px; text-align: center;"><strong>Item</strong></td>
+          <td style="width:132px; text-align: center;"><strong>Sample Type</strong></td>
+          <td style="width:124px; text-align: center;"><strong>Sample Volume&nbsp;</strong></td>
+          <td style="width:144px; text-align: center;"><strong>Reaction Time</strong></td>
+          <td style="width:151px; text-align: center;"><strong>Measuring Range</strong></td>
+          <td style="width:131px; text-align: center;"><strong>Certification</strong></td>
+        </tr>
+        <tr height="19" style="height:19px;">
+          <td height="19" style="height:19px; text-align: center;"><strong>GLU</strong></td>
+          <td style="text-align: center;">Serum</td>
+          <td style="text-align: center;">7μL</td>
+          <td style="text-align: center;">1min</td>
+          <td style="text-align: center;">1.00-25.00 mmol/L</td>
+          <td style="text-align: center;">NMPA</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+  </div>
+  <div class="section-name">Benefits</div>
+  <div class="section-bar"></div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Accurate</div>
+      Advanced reflective<br>
+      photometrymethod;
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Flexible</div>
+      Small in size, low sample volume <br>
+      (≤20μL).
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Rapid</div>
+      Running 60 tests per hour;<br>
+      Delivering Results in 1-5min;
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Easy to Use</div>
+      One-step Loading;<br>
+      Full-Touch Screen;<br>
+      User-friendly Interative System
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Economical</div>
+      Single test, free combination, no<br>
+      waste;
+    </div>
+  </div>
+  <div class="section-name mt-5">Specification</div>
+  <div class="section-bar mb-5"></div>
+  <div class="table-box">
+    <table class="table table-bordered">
+      <tbody>
+      <tr>
+        <td class="bk01 wz02" colspan="2"><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Technologies</strong></td>
+        <td class="bk01">Built-in thermal printer<br>
+          3.5‘’ LED touch screen<br>
+          LIS/HIS connection</td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Sample size</strong></td>
+        <td class="bk01">80μ</td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Standards </strong></td>
+        <td class="bk01">CE Mark</td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Dimension</strong></td>
+        <td class="bk01">250x258x104mm</td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Weight</strong></td>
+        <td class="bk01">2.5kg</td>
+      </tr>
+      <tr>
+        <td class="bk01"><strong>Application</strong></td>
+        <td class="bk01">Laboratory, ER, ICU, Respiratory, cardiology, Pediatric, etc.</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>

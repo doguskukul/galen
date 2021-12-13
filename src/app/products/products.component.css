@@ -59,7 +59,26 @@
   background: rgba(59, 1, 23, 0.3);
 }
 
+.product-card-text{
+  margin-bottom: 0px !important;
+}
+
 .product-card:hover {
-  filter: saturate(150%);
   cursor: pointer;
+  border: solid 3px rgba(123,3,6,0.85) !important;
+}
+
+.benefit-icon:hover {
+  animation: rotate 1s forwards alternate linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+
 }

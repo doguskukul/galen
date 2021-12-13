@@ -11,10 +11,251 @@
       </div>
     </div>
     <div class="col-lg-6 mt-4">
-      <img class="section-image" src="assets/images/product-main-0.jpg">
+      <img class="section-image" src="assets/images/product-main-2.jpg">
     </div>
   </div>
   <div class="row justify-content-lg-center mt-5">
     <div class="section-middle-bar"></div>
   </div>
 </div>
+
+<div class="container-fluid dark-background section pt-lg-2 pb-lg-5">
+  <div class="section-related">
+    <div class="section-name mt-5">Related Products</div>
+    <div class="section-bar"></div>
+  </div>
+  <div class="row mt-5 section-column">
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=1">
+      <img
+        src="assets/images/molecular-diagnostics-platform/u-card-dx.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Wondfo U-Card Dx™ Automated Rapid Molecular Diagnostic Instrument
+        </p>
+      </div>
+    </div>
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=2">
+      <img
+        src="assets/images/molecular-diagnostics-platform/real-time-rt.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          2019-nCoV Real-Time RT-PCR Assay
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="selectedProduct==1" class="container-fluid section pt-lg-2 pb-lg-5">
+  <div class="row pt-lg-2">
+    <div class="col-lg-6">
+      <img class="section-image" src="assets/images/molecular-diagnostics-platform/u-card-dx.png">
+    </div>
+    <div class="col-lg-6 section-column">
+      <div class="section-title">Wondfo U-Card Dx™ Automated Rapid Molecular Diagnostic Instrument</div>
+      <div class="section-description">
+        Wondfo U-Card Dx™ Automated Rapid Molecular Diagnostic Instrument can rapidly deliver lab-quality results, with
+        turnaround time in 30-45 minutes. It is designed as a fully automated and fully enclosed instrument, thus
+        minimizing manual handling and avoiding biosafety contamination, making it suitable for respiratory Infections
+        diagnosis in multi-scenes.
+      </div>
+    </div>
+  </div>
+  <div class="section-name">Benefits</div>
+  <div class="section-bar"></div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Multiplex
+      </div>
+      Up to 6 target genes
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Reliable
+        Accuracy
+      </div>
+      High sensitivity
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Fast
+      </div>
+      Turnaround time in 30-45 minutes
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Fully
+        Automatic
+      </div>
+      One-step sample loading
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Convenient
+      </div>
+      Pre-mixed, single-packaged PCR kit<br>
+      allows simpler operation
+    </div>
+  </div>
+  <div class="section-name mt-5">Specification</div>
+  <div class="section-bar mb-5"></div>
+  <div class="table-box">
+    <table class="table table-bordered">
+      <colgroup>
+        <col style="width: 452px;">
+        <col style="width: 477px;">
+      </colgroup>
+      <tbody>
+      <tr height="33" style="height: 33px;">
+        <td colspan="2" height="33" style="height: 33px; width: 929px;"><strong>Description</strong></td>
+      </tr>
+      <tr height="62" style="height: 62px;">
+        <td height="62" style="height: 62px;"><strong>Testing Menu</strong></td>
+        <td style="width: 477px;">U-Card Dx 2019-nCoV/Flu&nbsp;Test</td>
+      </tr>
+      <tr height="19" style="height: 19px;">
+        <td height="19" style="height: 19px;"><strong>Shelf Life</strong></td>
+        <td style="width: 477px;">5 years</td>
+      </tr>
+      <tr height="19" style="height: 19px;">
+        <td height="19" style="height: 19px;"><strong>Reaction Condition</strong></td>
+        <td>Ambient temperature: 15°C~30°C<br>
+          Relative Humidity (RH): 10%-80%
+        </td>
+      </tr>
+      <tr height="19" style="height: 19px;">
+        <td height="19" style="height: 19px;"><strong>Qualification</strong></td>
+        <td>CE-IVD</td>
+      </tr>
+      <tr height="19" style="height: 19px;">
+        <td height="19" style="height: 19px;"><strong>Applicable Scenarios</strong></td>
+        <td>Department of infectious diseases<br>
+          Clinical lab<br>
+          Vehicle-mounted laboratories<br>
+          Primary care center<br>
+          Airport<br>
+          Customs quarantine departments<br>
+          physician offices
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div *ngIf="selectedProduct==2" class="container-fluid section pt-lg-2 pb-lg-5">
+  <div class="row pt-lg-2">
+    <div class="col-lg-6">
+      <img class="section-image" src="assets/images/molecular-diagnostics-platform/real-time-rt.png">
+    </div>
+    <div class="col-lg-6 section-column">
+      <div class="section-title">2019-nCoV Real-Time RT-PCR Assay</div>
+      <div class="section-description">
+        Target genes are ORF1ab and N, designed in accordance with the diagnosis and treatment guideline issued by the
+        National Health Commission.
+      </div>
+    </div>
+  </div>
+  <div class="section-name">Benefits</div>
+  <div class="section-bar"></div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Flexible
+        Reagents
+      </div>
+      Open system reagents, applicable<br>
+      for major PCR detection system
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Multiple
+        Sample Types
+      </div>
+      Applicable to lower respiratory tract<br>
+      sample (sputum) and swabs
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Lower
+        Transport Cost
+      </div>
+      Lyophilized reagents, stable at<br>
+      10-30℃ for 12 months
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Whole Process
+        Control
+      </div>
+      Internal whole-proess quality<br>
+      monitoring, from extraction,<br>
+      amplification to detection
+    </div>
+    <div class="col-md-4">
+      <div class="section-title"><img class="benefit-icon mb-1" src="assets/images/benefits-icon.png"><br>Multiple
+        Target Genes
+      </div>
+      Precisely targeting ORF1ab and N<br>
+      gene of 2019-nCoV
+    </div>
+  </div>
+  <div class="section-name mt-5">Storage and Stability</div>
+  <div class="section-bar"></div>
+  <div class="section-description">
+    1. Store at 10～30℃ in the sealed pouch up to the expiration date printed on the package.<br>
+    The validity period of this product is tentatively 12 months. It can be transported at 10～30℃.<br>
+    2. Keep away from sunlight, moisture and heat.<br>
+    3. Kit contents are stable until the expiration date printed on the outer box.<br>
+    4. RT-PCR Lyophilized reagent should be used within 9 days after taking out from the sealed pouches, and the<br>
+    redissovled IC should be used within 9 days and stored at 2～8℃. Buffer solution should be re-capped in time<br>
+    after use.
+  </div>
+  <div class="section-name mt-5">Intended Use</div>
+  <div class="section-bar"></div>
+  <div class="section-description">
+    Wondfo 2019-nCoV Real-Time RT-PCR Assay is a real-time reverse transcription PCR (RT-PCR) assay for rapid,<br>
+    qualitative detection of novel coronaviruses nucleic acid in oropharyngeal swabs, nasopharyngeal swabs and<br>
+    sputum specimens. The test is to be used as an aid in the diagnosis of coronavirus infection disease (COVID-19),<br>
+    which is caused by 2019-nCoV.<br><br>
+    The test provides preliminary test results. Negative results don’t preclude 2019-nCoV infection and they cannot<br>
+    be used as the sole basis for treatment or other management decision.
+  </div>
+  <div class="section-name mt-5">Specification</div>
+  <div class="section-bar mb-5"></div>
+  <div class="table-box">
+    <table class="table table-bordered">
+      <tbody>
+      <tr style="height:33px;">
+        <td colspan="2" style="height:33px;"><span style="line-height:200%;"><strong>Description</strong></span></td>
+      </tr>
+      <tr style="height:62px;">
+        <td style="height:62px;"><span style="line-height:200%;"><strong>Catalog&nbsp;No.</strong></span></td>
+        <td style="height:62px;"><span style="line-height:200%;">W275P001/W275P002/W275P003/W275P004</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Target Gene</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">ORF1ab, N gene</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Time of Result</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">&lt; 60min after extraction</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Storage Condition</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">10-30℃</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Specimen</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">Oropharyngeal swabs/Nasopharyngeal swabs/Sputum</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Coincidence Rate</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">＞90%</span></td>
+      </tr>
+      <tr style="height:19px;">
+        <td style="height:19px;"><span style="line-height:200%;"><strong>Detection Limit</strong></span></td>
+        <td style="height:19px;"><span style="line-height:200%;">5.0 x10*2 copies/mL</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

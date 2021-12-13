@@ -26,3 +26,67 @@
     <div class="section-learn-more">Fertility</div>
   </div>
 </div>
+
+<div *ngIf="selectedTitle == 0" class="container-fluid dark-background section pt-lg-2 pb-lg-5">
+  <div class="section-related">
+    <div class="section-name mt-5">Related Products</div>
+    <div class="section-bar"></div>
+  </div>
+  <div class="row mt-5 section-column">
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=1">
+      <img
+        src="assets/images/colloidal-gold-platform/covid-19/influenza.jpg"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Influenza/2019-nCoV Antigen Combo Test
+        </p>
+      </div>
+    </div>
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=2">
+      <img
+        src="assets/images/colloidal-gold-platform/covid-19/antigen-test.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          2019-nCoV Antigen Test (Nasal Swab Self Testing)
+        </p>
+      </div>
+    </div>
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=3">
+      <img
+        src="assets/images/colloidal-gold-platform/covid-19/antibody-rapid-test.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          2019-nCoV RBD Antibody Rapid Test
+        </p>
+      </div>
+    </div>
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=4">
+      <img
+        src="assets/images/colloidal-gold-platform/covid-19/antigen-test-lateral.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          2019-nCoV Antigen Test (Lateral Flow Method)
+        </p>
+      </div>
+    </div>
+    <div class="card product-card m-2" style="width: 18rem;" (click)="selectedProduct=5">
+      <img
+        src="assets/images/colloidal-gold-platform/covid-19/antibody-test-lateral.png"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          2019-nCoV Antibody Test (Lateral Flow Method)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

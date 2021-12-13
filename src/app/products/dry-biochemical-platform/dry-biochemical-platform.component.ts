@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DryBiochemicalPlatformComponent implements OnInit {
 
+  selectedProduct = 0;
   constructor() { }
 
   ngOnInit(): void {
