@@ -13,6 +13,7 @@ import { ImmunofluorescencePlatformComponent } from './products/immunofluorescen
 import { MolecularDiagnosticsPlatformComponent } from './products/molecular-diagnostics-platform/molecular-diagnostics-platform.component';
 import { CoagulationPlatformComponent } from './products/coagulation-platform/coagulation-platform.component';
 import { DryBiochemicalPlatformComponent } from './products/dry-biochemical-platform/dry-biochemical-platform.component';
+import { GoogleMapsModule } from '@angular/google-maps'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { DryBiochemicalPlatformComponent } from './products/dry-biochemical-plat
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMapsModule
   ],
   exports: [RouterModule],
   providers: [],
