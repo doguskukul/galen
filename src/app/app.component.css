@@ -46,3 +46,8 @@
   color: #fff; }
 .footer-99382 .copyright {
   border-top: 1px solid #595959; }
+
+.site-menu-toggle {
+  color: white !important;
+  padding: 10px !important;
+}

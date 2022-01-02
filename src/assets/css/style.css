@@ -366,6 +366,7 @@ a {
 .logo {
   height: 100%;
   width: 170px;
+  padding: 5px !important;
 }
 
 .menu-link {
