@@ -26,16 +26,12 @@ export class ContactUsComponent implements OnInit {
   }
 
   public sendEmail(e: Event) {
-
-    var templateParams = {
-      name: 'James',
-      notes: 'Check this out!'
-    };
-    emailjs.send('service_96jc47c','template_4isvq6q', templateParams)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-      }, function(err) {
-        console.log('FAILED...', err);
+    e.preventDefault();
+    emailjs.sendForm('service_96jc47c', 'template_4isvq6q', e.target as HTMLFormElement, 'user_fQK20kTuKwvt9qFmQph0e')
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
       });
   }
 
